@@ -47,6 +47,7 @@ span.blog-hide {
 
 main {
     margin: 0;
+    margin-top: 130px;
 }
 
 .logo-label {
@@ -93,7 +94,14 @@ main {
     background-repeat: no-repeat;
     color: white; /* Adjust text color for readability */
     padding: 0px 20px; /* Adjust padding as needed */
-    height: 80vh; /* Adjust height as needed */
+    /* min-height: 80vh; Adjust height as needed */
+}
+
+.blog-landing-container {
+    color: #2E4053; /* Adjust text color for readability */
+    padding: 0px; /* Adjust padding as needed */
+    /* height: 80vh; Adjust height as needed */
+    min-height: 100vh;
 }
 
 .gradient-btn {
@@ -117,8 +125,29 @@ main {
     background: linear-gradient(45deg, #5248FF, #8C52FF);
 }
 
+.gradient-btn2 {
+    background: linear-gradient(45deg, #8C52FF, #5248FF);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background 0.3s ease, transform 0.3s ease;
+  }
+  
+.gradient-btn2:hover {
+    color: aliceblue;
+    transform: scale(1.05);
+    background: linear-gradient(45deg, #5248FF, #8C52FF);
+}
+
 .landing-container {
-    min-height: 50vh;
+    min-height: 80vh;
 }
 
 span.highlight-orange {
@@ -156,7 +185,6 @@ span.highlight-purple {
 
 .sched-head {
     padding: 8px 24px;
-    background-color: #FDFEFE;
 }
 
 .mon-year {
@@ -359,6 +387,22 @@ span.company-visit2 {
     overflow: hidden; /* Hide any overflow */
 }
 
+.post-container .post-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.post-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+    overflow: hidden;
+}
+
 .icon-loc {
     width: 40px;
 }
@@ -367,7 +411,110 @@ span.company-visit2 {
     display: none;
 }
 
+.blog-main {
+    padding: 0;
+}
 
+.read-btn {
+    background-color: #FF8C52;
+    color: white;
+    padding: 10px 24px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 24px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.read-btn:hover {
+    animation: float 1s infinite alternate;
+    color: white;
+    background-color: #f1844d;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-10px);
+    }
+}
+
+.blog-header-title {
+    font-weight: 700;
+}
+
+.carousel-thumbnails img {
+    cursor: pointer;
+}
+
+.carousel-thumbnails .active-thumbnail {
+    border: 2px solid #8C52FF; /* Or your preferred highlight color */
+}
+
+.sticky-post {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 20px; /* Adjust this value as needed */
+}
+
+.post-card {
+    background-color: #F4ECF7;
+}
+
+.next-blog-header {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.contained-img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.content-paragraph {
+    line-height: 36px;
+    font-size: 18px;
+}
+
+.content-header {
+    font-weight: 600;
+}
+
+.important-words {
+    font-weight: 700;
+}
+
+.publish {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.author-profile {
+    width: 72px;
+}
+
+.name-label {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.header-blog-title-card {
+    background-color: #FEF9E7;
+}
+
+.nav-icon {
+    width: 28px;
+}
+
+.popular {
+    font-weight: 600;
+    font-size: 22px;
+    color: #34495E;
+}
 
 
 
@@ -387,6 +534,8 @@ span.company-visit2 {
         margin: 130px 0 0 0;
     }
 
+
+
     .landing-header {
         font-size: 42px;
         font-weight: 700;
@@ -401,10 +550,6 @@ span.company-visit2 {
         color: #566573;
         font-weight: 600;
         font-size: 32px;
-    }
-
-    .sched-head {
-        min-width: 720px;
     }
 
     .sched-date {
@@ -436,6 +581,11 @@ span.company-visit2 {
     .landing-container {
         background-size:contain;
         background-position: center;
+    }
+
+    .blog-landing-container {
+        padding: 0 20px;
+        min-height: 100vh;
     }
 
     .speaker-profile {

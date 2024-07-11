@@ -59,3 +59,13 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+document.querySelectorAll('.carousel-thumbnails img').forEach((thumbnail, index) => {
+    thumbnail.addEventListener('click', () => {
+        document.querySelector('.carousel-thumbnails .active-thumbnail')?.classList.remove('active-thumbnail');
+        thumbnail.classList.add('active-thumbnail');
+    });
+});
+
+// Add initial active-thumbnail class to the first thumbnail
+document.querySelector('.carousel-thumbnails img').classList.add('active-thumbnail');
