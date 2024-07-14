@@ -435,14 +435,6 @@ span.company-visit2 {
     background-color: #f1844d;
 }
 
-@keyframes float {
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(-10px);
-    }
-}
 
 .blog-header-title {
     font-weight: 700;
@@ -478,8 +470,8 @@ span.company-visit2 {
 }
 
 .content-paragraph {
-    line-height: 36px;
-    font-size: 18px;
+    line-height: 26px;
+    font-size: 14px;
 }
 
 .content-header {
@@ -513,14 +505,76 @@ span.company-visit2 {
 }
 
 .popular {
-    font-weight: 600;
-    font-size: 22px;
+    font-weight: 700;
+    font-size: 24px;
     color: #34495E;
 }
 
 .mob-hide {
     display: none;
 }
+
+
+.first-sec {
+    margin: 32px 0;
+}
+
+.post-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    margin: 12px 0;
+}
+
+.post-card-link:hover .post-card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Example hover effect */
+}
+
+.popular-post {
+    height: 100vh; /* or any specific height you need */
+    overflow-y: scroll; /* adds vertical scroll bar */
+    overflow-x: hidden; /* hides horizontal scroll bar if needed */
+    padding: 10px; /* optional padding for inner content spacing */
+}
+
+.popular-post::-webkit-scrollbar {
+    width: 8px; /* width of the scrollbar */
+}
+
+.popular-post::-webkit-scrollbar-track {
+    background: #f1f1f1; /* color of the scrollbar track */
+    border-radius: 6px; /* roundness of the scrollbar track */
+}
+
+.popular-post::-webkit-scrollbar-thumb {
+    background: #8C52FF; /* color of the scrollbar thumb */
+    border-radius: 6px; /* roundness of the scrollbar thumb */
+}
+
+.popular-post::-webkit-scrollbar-thumb:hover {
+    background: #9763ff; /* color of the scrollbar thumb when hovered */
+}
+
+
+/* Global scrollbar styles for WebKit browsers (Chrome, Safari) */
+html::-webkit-scrollbar {
+    width: 12px; /* width of the scrollbar */
+}
+
+html::-webkit-scrollbar-track {
+    background: #f1f1f1; /* color of the scrollbar track */
+    border-radius: 6px; /* roundness of the scrollbar track */
+}
+
+html::-webkit-scrollbar-thumb {
+    background: #888; /* color of the scrollbar thumb */
+    border-radius: 6px; /* roundness of the scrollbar thumb */
+}
+
+html::-webkit-scrollbar-thumb:hover {
+    background: #555; /* color of the scrollbar thumb when hovered */
+}
+
 
 
 
@@ -538,6 +592,15 @@ span.company-visit2 {
 
     span.blog-hide {
         display: inline;
+    }
+
+    .first-sec {
+        margin: 0;
+    }
+
+    .content-paragraph {
+        line-height: 36px;
+        font-size: 18px;
     }
 
     .speaker-name {

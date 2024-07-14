@@ -69,3 +69,4 @@ document.querySelectorAll('.carousel-thumbnails img').forEach((thumbnail, index)
 
 // Add initial active-thumbnail class to the first thumbnail
 document.querySelector('.carousel-thumbnails img').classList.add('active-thumbnail');
+
