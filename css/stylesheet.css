@@ -230,7 +230,7 @@ span.company-visit2 {
 }
 
 .speaker-profile {
-    width: 120px;
+    width: 100px;
 }
 
 .speaker-card {
@@ -262,8 +262,7 @@ span.company-visit2 {
 .speaker-name {
     color: #34495E;
     font-weight: 600;
-    font-size: 22px;
-    
+    font-size: 18px;
 }
 
 .venue-name {
@@ -274,7 +273,7 @@ span.company-visit2 {
 }
 
 .speaker-role {
-    font-size: 16px;
+    font-size: 14px;
     color: #5D6D7E;
 }
 
@@ -541,6 +540,10 @@ span.company-visit2 {
         display: inline;
     }
 
+    .speaker-name {
+        font-size: 22px;
+    }
+
     main {
         margin: 130px 0 0 0;
     }
@@ -580,6 +583,10 @@ span.company-visit2 {
 
     .sched-desc {
         font-size: 18px;
+    }
+
+    .speaker-role {
+        font-size: 16px;
     }
 
     .sched-row {
