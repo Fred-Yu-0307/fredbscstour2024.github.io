@@ -170,7 +170,7 @@ span.highlight-purple {
 }
 
 .nav-pills .nav-link {
-    padding: 8px 24px;
+    padding: 8px 12px;
     font-weight: 500;
     color: #FFFFFF;
 }
@@ -194,6 +194,8 @@ span.highlight-purple {
 .sched-date {
     font-weight: 700;
     color: #8C52FF;
+    padding-bottom: 24px;
+    font-size: 20px;
 }
 
 .sched-desc {
@@ -517,6 +519,10 @@ span.company-visit2 {
     color: #34495E;
 }
 
+.mob-hide {
+    display: none;
+}
+
 
 
   
@@ -527,6 +533,10 @@ span.company-visit2 {
         padding: 20px 80px;
     }
 
+    .nav-pills .nav-link {
+        padding: 8px 24px;
+    }
+
     span.blog-hide {
         display: inline;
     }
@@ -535,7 +545,9 @@ span.company-visit2 {
         margin: 130px 0 0 0;
     }
 
-
+    .mob-hide {
+        display: inline;
+    }
 
     .landing-header {
         font-size: 42px;
@@ -555,6 +567,7 @@ span.company-visit2 {
 
     .sched-date {
         font-size: 22px;
+        padding-bottom: 12px;
     }
 
     .mon-year {
