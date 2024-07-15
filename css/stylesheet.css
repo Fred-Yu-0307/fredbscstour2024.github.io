@@ -33,7 +33,7 @@ section {
 }
 
 img.blog-logo {
-    width: 80px;
+    width: 50px;
 }
 
 .blog-logo-footer {
@@ -417,10 +417,10 @@ span.company-visit2 {
 }
 
 .read-btn {
-    font-size: 20px;
+    font-size: 14px !important;
     background-color: #FF8C52;
     color: white;
-    padding: 10px 24px;
+    padding: 6px 12px;
     text-decoration: none;
     display: inline-block;
     border-radius: 24px;
@@ -575,6 +575,28 @@ html::-webkit-scrollbar-thumb:hover {
     background: #555; /* color of the scrollbar thumb when hovered */
 }
 
+/* Customize the navbar-toggler */
+.navbar-toggler {
+    padding: 8px; /* Add padding for a larger button */
+}
+
+/* Customize the navbar-toggler-icon */
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;charset=UTF8,%3Csvg viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath stroke="rgba(140, 82, 255, 1)" stroke-width="2" stroke-linecap="round" stroke-miterlimit="10" d="M4 7h22M4 15h22M4 23h22"/%3E%3C/svg%3E'); /* Custom icon color */
+}
+
+/* Optional: Adjust the size of the icon */
+.navbar-toggler {
+    width: 40px;
+    height: 40px;
+}
+
+.navbar-toggler-icon {
+    width: 30px;
+    height: 30px;
+}
+
+
 
 
 
@@ -584,6 +606,11 @@ html::-webkit-scrollbar-thumb:hover {
 @media screen and (min-width: 768px) { 
     .nav-blog {
         padding: 20px 80px;
+    }
+
+    .read-btn {
+        font-size: 20px;
+        padding: 10px 24px;
     }
 
     .nav-pills .nav-link {
@@ -603,6 +630,10 @@ html::-webkit-scrollbar-thumb:hover {
         font-size: 18px;
     }
 
+    img.blog-logo {
+        width: 80px;
+    }
+    
     .speaker-name {
         font-size: 22px;
     }
